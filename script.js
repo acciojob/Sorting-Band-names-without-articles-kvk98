@@ -14,7 +14,8 @@ withoutArticles.sort();
 let ul = document.getElementsByTagName("ul")[0];
 for(let i = 0; i < withoutArticles.length; i++) {
 	let li = document.createElement("li");
-	li.innerHTML(map[ withoutArticles[i] ]);
+	li.innerText = map[ withoutArticles[i] ];
+	ul.appendChild(li)
     // console.log(map[ withoutArticles[i] ]);
 }
 
