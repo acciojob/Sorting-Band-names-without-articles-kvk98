@@ -11,6 +11,10 @@ for(let i = 0 ; i < arr.length; i++) {
     withoutArticles.push(str);
 }
 withoutArticles.sort();
+let ul = document.getElementsByTagName("ul")[0];
 for(let i = 0; i < withoutArticles.length; i++) {
-    console.log(map[ withoutArticles[i] ]);
+	let li = document.createElement("li");
+	li.innerHTML(map[ withoutArticles[i] ]);
+    // console.log(map[ withoutArticles[i] ]);
 }
+
